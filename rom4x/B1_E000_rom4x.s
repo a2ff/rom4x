@@ -151,8 +151,10 @@ msg1 = *
           .byte $07,$86,"5 Boot SmartPort"
           .byte $04,$2e,"6 Boot Int. 5.25"
           .byte $04,$ae,"7 Boot Ext. 5.25"
-          .byte $07,$5f,"By M.G."
-msg2:     .byte $07,$db,"ROM 4X 10/01/18"
+;          .byte $07,$5f,"By M.G."
+          .byte $07,$56,"By M.G. - There Be Dragons"
+;msg2:     .byte $07,$db,"ROM 4X 10/01/18"
+msg2:     .byte $07,$da,"ROM 4X 06/21/2021"
           .byte $05,$ae,$00                ; cursor pos in menu
 msg3:     .byte $05,$b0,"SURE? ",$00
           .dword .time              ; embed POSIX build time
